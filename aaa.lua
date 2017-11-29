@@ -43,23 +43,6 @@ local Instances={--副本表
         {650,1},{658,1},{668,1},
         {724,0},{724,1},{724,2},{724,3},
 }
---随身NPC
-local ST={
-    TIME=45,--45秒
-    NPCID1=190098,
-    NPCID2=190099,
-    --[guid]=lasttime,
-}
-
-
-
-local function ResetPlayer(player, flag, text)
-    player:SetAtLoginFlag(flag)
-    player:SendAreaTriggerMessage("你需要重新登录角色，才能修改"..text.."。")
-    player:SendAreaTriggerMessage("正在返回选择角色菜单")
-    player:LogoutPlayer(true)
-end
-
 
 local Stone={
     GetTimeASString=function(player)
