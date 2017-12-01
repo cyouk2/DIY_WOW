@@ -11,7 +11,7 @@ MYSQL_COMMAND="mysql -h$DB_HOST -P$DB_PORT -u$USERNAME $DATABASE"
 ## Updates
 echo "> Processing database updates ..."
 COUNT=0
-for UPDATE in "${ADDITIONAL_PATH}Updates"[0-9]*.sql
+for UPDATE in "${ADDITIONAL_PATH}"*.sql
 do
   if [ -e "$UPDATE" ]
   then
