@@ -1,4 +1,4 @@
-1、首先，这个是脚本代码。你需要知道Trinity-Core如何增加脚本2、这个是一套NPC的脚本。3、脚本功能就是通过NPC来给自己身上的物品附魔（附魔都知道吧？）5、你需要在creature_template里面加上对应的NPC，然后使用npc_enchantment脚本名称，。然后进入游戏用.npc add 来增加该功能NPC下面是代码 #include "ScriptPCH.h"
+//首先，这个是脚本代码。你需要知道Trinity-Core如何增加脚本2、这个是一套NPC的脚本。3、脚本功能就是通过NPC来给自己身上的物品附魔（附魔都知道吧？）5、你需要在creature_template里面加上对应的NPC，然后使用npc_enchantment脚本名称，。然后进入游戏用.npc add 来增加该功能NPC下面是代码 #include "ScriptPCH.h"
 
 class npc_enchantment : public CreatureScript
 
